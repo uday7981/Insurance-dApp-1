@@ -1,0 +1,232 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navbar */
+#navbar {
+    background-color: #20252e;
+    /* background-color: grey; */
+    display: flex;
+    position: sticky;
+    height: 60px;
+    /* border: 2px solid red; */
+    padding: 0px 2px;
+    /* margin: 2px 2px; */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+#logo img {
+    /* border: 2px solid red; */
+    position: relative;
+    top: -80px;
+    left: 40px;
+    height: 200px;
+    margin: 3px 6px;
+    padding: 2px 2px;
+}
+
+/* Company-name */
+/* #navbar .company-name {
+    color: rgb(242, 237, 237);
+    position: relative;
+    top: -21px; */
+/* border: 2px solid red; */
+/* padding: 2px 2px;
+    margin: 2px 2px;
+    font-size: 25px; */
+/* font-weight: bold; */
+/* font-family: 'Roboto', sans-serif;
+} */
+
+
+/* Midbar */
+#navbar #midbar {
+    display: flex;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 270px;
+    top: -9px;
+    /* width: 50%; */
+    margin: 2px 2px;
+    padding: 19px 2px;
+}
+
+#navbar #midbar li {
+    list-style: none;
+    margin: 3px 20px;
+    padding: 3px 4px;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+#navbar #midbar li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 0px 4px;
+    transition: all 0.5s ease-in 0s;
+}
+
+#navbar .connectWallet button {
+    background-color: #1eab89;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    /* font-weight: bold; */
+    height: 40px;
+    width: 150px;
+    margin: 2px 2px;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+
+/* Section: Applypage (i.e. payment box) */
+.payboxdiv {
+    /* border: 2px solid #1eab89; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin: 108px 335px;
+    padding: 2px 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.payboxdiv #titleforpayboxdiv {
+    display: flex;
+    gap: 15px;
+}
+
+.payboxdiv #titleforpayboxdiv img {
+    height: 50px;
+    width: 50px;
+}
+
+.payboxdiv .formbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    /* border: 2px solid #1eab89; */
+    width: 750px;
+    height: 80px;
+}
+
+.payboxdiv .formbox .inputbox {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+.payboxdiv .formbox .inputbox label {
+    margin: 2px 2px;
+    padding: 2px 2px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(86, 90, 105);
+    /* background-color: aliceblue; */
+    font-family: 'Inter', sans-serif;
+}
+
+.payboxdiv .formbox .inputbox input {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 8px;
+    height: 2.2rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(247, 248, 250);
+    width: 100%;
+    border: 0px;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+.payboxdiv #executebutton {
+    padding: 18px;
+    width: 800px;
+    height: 50px;
+    text-align: center;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(234, 234, 234);
+    color: rgb(109, 168, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.payboxdiv .executebtn:hover {
+    background-color: rgb(230, 227, 227);
+}
+
+
+
+/* Footer */
+footer .bottom-bar {
+    display: flex;
+    display: row;
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #1eab89;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2px 2px;
+    margin: 2px 2px; */
+}
+
+footer .bottom-bar #logo-bottom-bar img {
+    /* border: 2px solid red; */
+    /* font-size: 300px; */
+    height: 50px;
+    width: 50px;
+    margin: 3px 6px;
+    padding: 2px 2px;
+
+}

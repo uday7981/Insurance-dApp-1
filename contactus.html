@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Kanit:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+</body>
+<nav id="navbar">
+    <div id="logo">
+        <img src="img/logo.png" alt="error">
+    </div>
+    <!-- <div class="company-name">
+        <h3>Assurance</h3>
+    </div> -->
+    <!-- <ul id="midbar">
+        <li><a href="#" class="nav-item">OVERVIEW</a></li>
+        <li><a href="#" class="nav-item">PRODUCTS</a></li>
+        <li><a href="#" class="nav-item">TEAM</a></li>
+        <li><a href="#" class="nav-item">CONTACT US</a></li>
+    </ul> -->
+    <ul id="iconbar">
+        <li><a href="#" class="icon"><ion-icon name="logo-discord"></ion-icon></a></li>
+        <li><a href="#" class="icon"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="icon"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    </ul>
+</nav>
+<section class="contactus">
+    <div class="contactus-title">We'd love to hear from you</div>
+    <div class="contactus-para">
+        <p>Use the below contact form for sales, business and partnership inquiries. Tell us a bit about yourself
+            and your company.</p>
+        <p>If you have a technical question or issue using the Nexus Mutual interface, please use our dedicated <a
+                href="#" class="contactus-anchor">Discord channel</a> for all support inquiries.</p>
+    </div>
+    <div class="form">
+        <form action="backend.php">
+            <label for="name">FULL NAME</label>
+            <div>
+                <input type="text" name="myname" id="name">
+            </div>
+            <label for="email">EMAIL</label>
+            <div>
+                <input type="email" name="myname" id="email">
+            </div>
+            <label for="company">COMPANY</label>
+            <div>
+                <input type="text" name="myname" id="company">
+            </div>
+            <label for="message">MESSAGE</label>
+            <div><textarea name="" cols="30" rows="10" id="message"></textarea></div>
+            <button class="btn-submit-contactus">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="bottom-bar">
+        <div id="logo-bottom-bar">
+            <img src="img/footer.png" alt="error">
+        </div>
+        <!-- <div class="company-name-bottom-bar">
+            <h3>Assurance</h3>
+        </div> -->
+    </div>
+</footer>
+
+<!-- Installing icon library -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>

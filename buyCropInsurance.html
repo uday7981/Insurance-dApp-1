@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Crop Insurance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Kanit:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/buy-style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="error">
+        </div>
+        <!-- <div class="company-name">
+            <h3>Assurance</h3>
+        </div> -->
+        <ul id="midbar">
+            <li><a href="#" class="nav-item">Buy cover</a></li>
+            <li><a href="#" class="nav-item">Claim</a></li>
+        </ul>
+        <div class="connectWallet">
+            <button id="connectwalletbutton" onclick="bundle.connect()">Connect wallet</button>
+        </div>
+        <!-- <div class="executebtn">
+            <button class="executebutton" onclick="bundle.execute()">Execute</button>
+        </div> -->
+    </nav>
+
+
+    <section class="apply-page">
+        <div class="payboxdiv">
+            <div id="titleforpayboxdiv">
+                <img src="img/footer.png" alt="error">
+                <h2>ASSURANCE CROP PROTECTION</h2>
+            </div>
+
+            <div class="formbox">
+                <div class="inputbox">
+                    <label for="landaddress">Land Address</label>
+                    <input type="text" id="landaddress" placeholder="Land Address">
+                </div>
+                <div class="inputbox">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                <div class="inputbox">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Country">
+                </div>
+            </div>
+            <button id="executebutton" onclick="bundle.execute()">Execute</button>
+        </div>
+    </section>
+
+
+    <section class="termsandconditions"></section>
+
+    <footer>
+        <div class="bottom-bar">
+            <div id="logo-bottom-bar">
+                <img src="img/footer.png" alt="error">
+            </div>
+            <!-- <div class="company-name-bottom-bar">
+                <h3>Assurance</h3>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="./dist/bundle.js" type="text/javascript"></script>
+</body>
+
+</html>
