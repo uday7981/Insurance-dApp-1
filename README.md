@@ -31,17 +31,17 @@ The architecture of Assuarance is divided into two parts:
 Creating the policy 
 Figure 1 represents the creation of policy for crop insurance.The farmer in the diagram represents one node of the network who wants to create a policy, whereas the investor represents the other node on the network who wants to cover for the policy. Firstly, a regulatory body conducts a Know Your Customer (KYC) verification of all the participating parties that are farmers and investors. The KYC details are stored on the blockchain and are available for everyone. Now the farmer goes to the website and creates their own policies. The premium and cover values are calculated by an external risk body who submits its report to the system. Once the farmer enters the details and pays the premium, a policy is created. The investor can then cover this policy by paying the coverage amount and thus an investor and farmer goes into the contract. The contract or agreement is stored on the blockchain and along with it, the amount paid is also stored on the chain. Thus, there can be no fraudulent activity. This step is achieved by the use of a smart contract. The contract executes automatically when the condition is met and this property of the contract is used in insurance claims.
 
-![Creation of Policy](Creation of policy.jpg)
+![Creation of Policy](Creation of policy.png)
 
 Claiming the policy
 Once the farmer claims the policy, the smart contract fetches the external weather data using chain link nodes. Depending on the amount of rainfall in that region the trigger is set in the smart contract. If the rainfall is less, then the investor receives their cover back along with the premium paid by the farmer as incentive for covering. If the rainfall is more than the threshold, then the farmer receives their cover along with the premium he had paid as coverage for the damages.
 The claim processing part is quick and without any delay as it is just a code and so the necessary body receives the claim immediately and does not have to wait for months to get it. With the help of private investors, self reliance is promoted which is the need of the hour at the moment.
 
-![Claiming of Policy](Claiming of policy.jpg)
+![Claiming of Policy](Claiming of policy.png)
 
 Interaction of blockchain with external environment via Chainlink
 
-![Interaction of blockchain with external environment via Chainlink](Interaction via chainlink.jpg)
+![Interaction of blockchain with external environment via Chainlink](Interaction via chainlink.png)
 
 ## Roadmap
 
