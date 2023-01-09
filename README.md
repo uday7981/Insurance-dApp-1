@@ -41,7 +41,7 @@ The claim processing part is quick and without any delay as it is just a code an
 
 Interaction of blockchain with external environment via Chainlink
 
-![Interaction of blockchain with external environment via Chainlink](Interaction of blockchain with external environment via Chainlink.jpg)
+![Interaction of blockchain with external environment via Chainlink](Interaction via chainlink.jpg)
 
 ## Roadmap
 
