@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Crop Insurance</title>
+    <title>Crop Insurance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Kanit:wght@200&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/buy-style.css">
+    <link rel="stylesheet" href="css/buyclaim-style.css">
 </head>
 
 <body>
@@ -31,11 +34,11 @@
             <h3>Assurance</h3>
         </div> -->
         <ul id="midbar">
-            <li><a href="#" class="nav-item">Buy cover</a></li>
+            <li><a href="/buyInsurance.html" class="nav-item" target="_blank">Buy cover</a></li>
             <li><a href="#" class="nav-item">Claim</a></li>
         </ul>
         <div class="connectWallet">
-            <button id="connectwalletbutton" onclick="bundle.connect()">Connect wallet</button>
+            <button id="connectwalletbutton">Connect wallet</button>
         </div>
         <!-- <div class="executebtn">
             <button class="executebutton" onclick="bundle.execute()">Execute</button>
@@ -51,6 +54,15 @@
             </div>
 
             <div class="formbox">
+                <!-- <div class="inputbox">
+                    <label for="croptype">Crop type</label>
+                    Rabi <input type="radio" name="croptype"> Kharif <input type="radio" name="croptype">
+                </div> -->
+
+                <div class="inputbox">
+                    <label for="ate of Drought/">Area</label>
+                    <input type="number" id="area" placeholder="in acres">
+                </div>
                 <div class="inputbox">
                     <label for="landaddress">Land Address</label>
                     <input type="text" id="landaddress" placeholder="Land Address">
@@ -63,26 +75,38 @@
                     <label for="country">Country</label>
                     <input type="text" id="country" placeholder="Country">
                 </div>
+
             </div>
-            <button id="executebutton" onclick="bundle.execute()">Execute</button>
+            <button id="fundButton">Pay Premium</button>
+            <button id="withdrawButton">Claim</button>
         </div>
     </section>
 
 
-    <section class="termsandconditions"></section>
+    <section class="termsandconditions">
+        <div class="tandcbox">
+            <h3>Terms and conditions</h3>
+            <ul>
+                <li>The premium amount is 0.1 ETH and the policy will be valid for 1 year from the date of premium paid.
+                </li>
+                <li>Cover is available for damage done to crops from rainfall, hail, drought</li>
+                <li>In case of a claim, you'll receive the equivalent of your lost funds in ETH up to the covered
+                    amount.</li>
+                <li>You can claim up to 35 days after the cover period expires, given your cover was active when the
+                    incident happened.</li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
         <div class="bottom-bar">
             <div id="logo-bottom-bar">
                 <img src="img/footer.png" alt="error">
             </div>
-            <!-- <div class="company-name-bottom-bar">
-                <h3>Assurance</h3>
-            </div> -->
         </div>
     </footer>
 
-    <script src="./dist/bundle.js" type="text/javascript"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>

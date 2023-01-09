@@ -7,7 +7,7 @@ body::before {
     content: "";
     position: absolute;
     background: url('../img/bg1.jpg') no-repeat center center/cover;
-    height: 100%;
+    height: 140%;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -113,16 +113,19 @@ body::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 550px;
     margin: 108px 335px;
     padding: 2px 2px;
     background: rgb(255, 255, 255);
     border-radius: 30px;
-    gap: 10px;
+    gap: 5px;
 }
 
 .payboxdiv #titleforpayboxdiv {
     display: flex;
+    position: relative;
+    left: -150px;
+    top: -120px;
     gap: 15px;
 }
 
@@ -133,9 +136,10 @@ body::before {
 
 .payboxdiv .formbox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 3px;
     padding: 2px 2px;
     margin: 2px 2px;
     /* border: 2px solid #1eab89; */
@@ -146,6 +150,8 @@ body::before {
 .payboxdiv .formbox .inputbox {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: -250px;
     margin: 2px 2px;
     padding: 2px 2px;
 }
@@ -164,17 +170,51 @@ body::before {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    margin-right: 20px;
     padding: 0px 8px;
     height: 2.2rem;
     color: rgb(0, 0, 0);
     background-color: rgb(247, 248, 250);
-    width: 100%;
+    width: 290%;
     border: 0px;
     border-radius: 12px;
     font-family: 'Inter', sans-serif;
 }
 
-.payboxdiv #executebutton {
+
+
+.payboxdiv #fundButton {
+    padding: 18px;
+    width: 800px;
+    height: 50px;
+    text-align: center;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: 113px;
+    z-index: 1;
+    background-color: rgb(234, 234, 234);
+    color: #1eab89;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.payboxdiv #fundButton:hover {
+    background-color: rgb(230, 229, 229);
+}
+
+.payboxdiv #withdrawButton {
     padding: 18px;
     width: 800px;
     height: 50px;
@@ -193,16 +233,42 @@ body::before {
     position: relative;
     z-index: 1;
     background-color: rgb(234, 234, 234);
-    color: rgb(109, 168, 255);
+    color: #1eab89;
     font-size: 16px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
+    top: 120px;
 }
 
-.payboxdiv .executebtn:hover {
-    background-color: rgb(230, 227, 227);
+.payboxdiv #withdrawButton:hover {
+    background-color: rgb(230, 229, 229);
 }
 
+
+/* Terms and Conditions Box*/
+.tandcbox {
+    border: 2px solid rgb(213, 215, 219);
+    background-color: rgb(247, 248, 250);
+    margin: -50px 120px;
+    color: #505050;
+    width: 80%;
+    font-size: 16px;
+    padding: 2px 2px;
+    border-radius: 15px;
+}
+
+.tandcbox h3 {
+    /* text-align: center; */
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 1px;
+}
+
+.tandcbox li {
+    font-family: 'Open Sans', sans-serif;
+    /* text-align: center; */
+    word-spacing: 1px;
+}
 
 
 /* Footer */
@@ -211,7 +277,9 @@ footer .bottom-bar {
     display: row;
     /* border: 2px solid red; */
     position: absolute;
-    bottom: 0;
+    bottom: -350px;
+    left: 0;
+    right: 0;
     height: 60px;
     width: 100%;
     background-color: #1eab89;
