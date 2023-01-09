@@ -16,6 +16,12 @@ Provide a secure, standardized, and transparent system that does not hinder any 
 Smart Contract is written in `Solidity`
 
 The front-end and User Interface (UI) of the system is coded using the `React` Web Framework
+
+`Coinbase Wallet`: This is a secure online platform for managing cryptocurrency assets. It is used to hold and transfer funds related to the crop insurance contracts.
+
+`Coinbase Node`: This is a full node implementation of the Dapp. It is used to validate and propagate transactions related to the crop insurance contracts.
+
+`Chainlink`: This is a decentralized oracle network that allows smart contracts to access off-chain data. It is used to retrieve real-time crop yield data and other relevant information for the insurance contracts.
  
 The development environment used is `Truffle` Suite
 
@@ -49,14 +55,4 @@ Smart contract optimization: Improve code re-usage and remove redundant checks t
 We will focus on the core functionality of selling and buying on our app and integrate a limited amount of policies. New ones will be added gradually as we can digest more data from sales and traits and add it to our price prediction model
 Will focus on integrating other insurance policies and keep adding functionalities on all chains
 
-## Screenshots
 
-![Screenshot](1.png)
-![Screenshot](2.png)
-![Screenshot](3.png)
-![Screenshot](4.png)
-![Screenshot](5.png)
-![Screenshot](6.png)
-![Screenshot](7.png)
-![Screenshot](8.png)
-![Screenshot](9.png)
